@@ -417,6 +417,8 @@
 
     totalIncorrectAnswers = totalQuestions - totalCorrectAnswers;
 
+   // List of correct Answers 
+   var allCorrectAnswers = Object.values(correctAnswers).flat();
     // Display summary response
     displayResponse();
   }
