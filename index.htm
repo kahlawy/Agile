@@ -417,12 +417,35 @@
 
     totalIncorrectAnswers = totalQuestions - totalCorrectAnswers;
 
-   // List of correct Answers 
+   // list of correct Answers 
    var allCorrectAnswers = Object.values(correctAnswers).flat();
-    console.log(allCorrectAnswers);
+
+  console.log(allCorrectAnswers);
+
     // Display summary response
     displayResponse();
   }
+
+  function checkAllCorrectAnswers(questionNumber, correctAnswers) {
+  // Get all checkboxes for the question
+  var checkboxes = document.querySelectorAll('input[name="q' + questionNumber + '"]');
+
+  // Uncheck all checkboxes first
+  checkboxes.forEach(checkbox => {
+    checkbox.checked = false;
+  });
+
+  // Select only the correct answers
+  correctAnswers.forEach(correctAnswer => {
+    var checkbox = document.querySelector('input[name="q' + questionNumber + '"][value="' + correctAnswer + '"]');
+    if (checkbox) {
+      checkbox.checked = true;
+    }
+  });
+
+  // Store all correct answers
+  userSelections['q' + questionNumber] = correctAnswers;
+}
 
   function checkAnswer(questionNumber, correctAnswer) {
     // Get user's selected answer
@@ -465,3 +488,4 @@
 
 </body>
 </html>
+
