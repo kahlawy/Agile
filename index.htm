@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
     /* Add your CSS styles here */
     body {
       font-family: Arial, sans-serif;
-      
+
     }
 
     ol {
@@ -30,9 +31,14 @@
       color: green;
     }
 
-      .incorrect-answer {
+    .incorrect-answer {
       color: red;
     }
+
+    .answer {
+      color: black;
+    }
+
     #responseArea {
       margin-top: 20px;
       padding: 20px;
@@ -40,6 +46,7 @@
       border-radius: 8px;
       background-color: #f8f9fa;
     }
+
     #resultArea {
       margin-top: 20px;
       padding: 20px;
@@ -48,209 +55,224 @@
       background-color: #f8f9fa;
       color: royalblue;
     }
-    input{
-       font-size: large; 
-       color: royalblue;
+
+    input {
+      font-size: large;
+      color: royalblue;
     }
   </style>
 </head>
+
 <body>
 
   <div class="container mt-5">
-<div class="alert alert-primary" role="alert">
-  <h1 class="text-center mb-4 " >Software Quality Assurance</h1>
-  <h4 class="text-center mb-4 ">Quiz Sample Practice 2023/2024</h4>
-</div>
-<form id="quizForm">
-    <li>
-    <p class="alert alert-secondary">1. At the …………., quality management is concerned with establishing a framework of organizational processes and standards that will lead to high-quality software.</p>
-    <ul>
-      <li ><input type="radio" name="q1" value="A"> (A) project level</li>
-      <li ><input type="radio" name="q1" value="B" > (B) organizational level</li>
-      <li ><input type="radio" name="q1" value="C"> (C) A and B</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">2. Some Quality requirements are …………… in the same sense as functional requirements. If the system does not meet them, it is useless.</p>
-    <ul>
-      <li><input type="radio" name="q2" value="A"> (A) recommended</li>
-      <li><input type="radio" name="q2" value="B" > (B) mandatory</li>
-      <li><input type="radio" name="q2" value="C"> (C) composition</li>
-      <li><input type="radio" name="q2" value="D"> (D) optional</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">3.  …………………provides an independent check on the software development process.</p>
-    <ul>
-      <li><input type="radio" name="q3" value="A"> (A) Quality control</li>
-      <li><input type="radio" name="q3" value="B" > (B) Quality management</li>
-      <li><input type="radio" name="q3" value="C"> (C) Quality requirements</li>
-      <li><input type="radio" name="q3" value="D"> (D) Nothing</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">4. A ………………. sets out the desired product qualities and how these are assessed and defines the most significant quality attributes.</p>
-    <ul>
-      <li><input type="radio" name="q4" value="A"> (A) Quality review</li>
-      <li><input type="radio" name="q4" value="B"> (B) Quality plan</li>
-      <li><input type="radio" name="q4" value="C"> (C) Quality requirements</li>
-      <li><input type="radio" name="q4" value="D"> (D) Nothing</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">5. The bottom-up design refers to:</p>
-    <ul>
-      <li><input type="radio" name="q5" value="A"> (A) Identifying the processes</li>
-      <li><input type="radio" name="q5" value="B"> (B) Analyzing the processes as systems</li>
-      <li><input type="radio" name="q5" value="C"> (C) Reviewing the requirements</li>
-      <li><input type="radio" name="q5" value="D"> (D) A and B</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">6. In the structure chart design, the …………structure charts are used when all the transactions do not follow the same path.</p>
-    <ul>
-      <li><input type="radio" name="q6" value="A"> (A) Transform-centered</li>
-      <li><input type="radio" name="q6" value="B"> (B) Transaction-centered</li>
-      <li><input type="radio" name="q6" value="C"> (C) Nothing</li>
-      <li><input type="radio" name="q6" value="D"> (D) A and B</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">7. The ………………, allows the analyst to create CASE design entities from existing computer source code.</p>
-    <ul>
-      <li><input type="radio" name="q7" value="A"> (A) Design reengineering</li>
-      <li><input type="radio" name="q7" value="B"> (B) Reverse engineering</li>
-      <li><input type="radio" name="q7" value="C"> (C) Object-oriented methods</li>
-      <li><input type="radio" name="q7" value="D"> (D) A and B</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">8. SQA group is independent of …………………...</p>
-    <ul>
-      <li><input type="radio" name="q8" value="A"> (A) The project manager</li>
-      <li><input type="radio" name="q8" value="B"> (B) The project’s software engineering group</li>
-      <li><input type="radio" name="q8" value="C"> (C) The other software-related groups</li>
-      <li><input type="radio" name="q8" value="D"> (D) All of the above</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">9. In the quality control, the process control is carried out …………..</p>
-    <ul>
-      <li><input type="radio" name="q9" value="A"> (A) Before production</li>
-      <li><input type="radio" name="q9" value="B"> (B) During production</li>
-      <li><input type="radio" name="q9" value="C"> (C) After production control</li>
-      <li><input type="radio" name="q9" value="D"> (D) All of the above</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">10. Select which option is not true about software quality assurance ………</p>
-    <ul>
-      <li><input type="radio" name="q10" value="A"> (A) Audits and reviews to be performed by the team</li>
-      <li><input type="radio" name="q10" value="B"> (B) Amount of technical work to be performed</li>
-      <li><input type="radio" name="q10" value="C"> (C) Evaluations to be performed</li>
-      <li><input type="radio" name="q10" value="D"> (D) Nothing</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">11. ………. are a primary objective of formal technical reviews to find during the process so that after the release of the software they do not become the defect.</p>
-    <ul>
-      <li><input type="radio" name="q11" value="A"> (A) Failures</li>
-      <li><input type="radio" name="q11" value="B"> (B) Errors</li>
-      <li><input type="radio" name="q11" value="C"> (C) Faults</li>
-      <li><input type="radio" name="q11" value="D"> (D) All of the above</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">12. Select which one is not appraisal in Software Quality Assurance?</p>
-    <ul>
-      <li><input type="radio" name="q12" value="A"> (A) Maintenance</li>
-      <li><input type="radio" name="q12" value="B"> (B) Quality Planning</li>
-      <li><input type="radio" name="q12" value="C"> (C) Testing</li>
-      <li><input type="radio" name="q12" value="D"> (D) Inter-process inspection</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">13. …………… is an example of a classification of quality factors according to ISO 9126.</p>
-    <ul>
-      <li><input type="radio" name="q13" value="A"> (A) Sustainability</li>
-      <li><input type="radio" name="q13" value="B"> (B) Maintainability</li>
-      <li><input type="radio" name="q13" value="C"> (C) Accountability</li>
-      <li><input type="radio" name="q13" value="D"> (D) Profitability</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">14. The …………….. is an example of the content of SQA Plan according to IEEE Std 730</p>
-    <ul>
-      <li><input type="radio" name="q14" value="A"> (A) Faults control</li>
-      <li><input type="radio" name="q14" value="B"> (B) Reference document</li>
-      <li><input type="radio" name="q14" value="C"> (C) Scope Control</li>
-      <li><input type="radio" name="q14" value="D"> (D) A and B</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">15. A high-quality product satisfies clearly stated ………………………</p>
-    <ul>
-      <li><input type="radio" name="q15" value="A"> (A) Errors</li>
-      <li><input type="radio" name="q15" value="B"> (B) Requirements</li>
-      <li><input type="radio" name="q15" value="C"> (C) Project manager view</li>
-      <li><input type="radio" name="q15" value="D"> (D) Reviews</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">16. In the hotel system, the guest screen shall be able to show at least 200 rooms booked/occupied per day, e.g., for a company event with a single “customer”.</p>
-    <ul>
-      <li><input type="radio" name="q16" value="A"> (A) Capacity requirements</li>
-      <li><input type="radio" name="q16" value="B"> (B) Usability requirements</li>
-      <li><input type="radio" name="q16" value="C"> (C) Accuracy requirements</li>
-      <li><input type="radio" name="q16" value="D"> (D) Performance requirements</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">17. In the hotel system, bookings shall be possible at least two years ahead.</p>
-    <ul>
-      <li><input type="radio" name="q17" value="A"> (A) Capacity requirements</li>
-      <li><input type="radio" name="q17" value="B"> (B) Usability requirements</li>
-      <li><input type="radio" name="q17" value="C"> (C) Accuracy requirements</li>
-      <li><input type="radio" name="q17" value="D"> (D) Performance requirements</li>
-    </ul>
-  </li>
-
-  <li>
-    <p class="alert alert-secondary">18. Scrolling one page up or down in a 200-page document shall take at most 1 s. Searching for a specific keyword shall take at most 5 s.</p>
-    <ul>
-      <li><input type="radio" name="q18" value="A"> (A) Capacity requirements</li>
-      <li><input type="radio" name="q18" value="B"> (B) Usability requirements</li>
-      <li><input type="radio" name="q18" value="C"> (C) Accuracy requirements</li>
-      <li><input type="radio" name="q18" value="D"> (D) Performance requirements</li>
-    </ul>
-
-    <li>
-      <p class="alert alert-secondary">19. Novice users shall perform each task in 15 minutes.</p>
-      <ul>
-        <li><input type="radio" name="q19" value="A"> (A) Capacity requirements</li>
-        <li><input type="radio" name="q19" value="B"> (B) Usability requirements</li>
-        <li><input type="radio" name="q19" value="C"> (C) Accuracy requirements</li>
-        <li><input type="radio" name="q19" value="D"> (D) Performance requirements</li>
-      </ul>
+    <div class="alert alert-primary" role="alert">
+      <h1 class="text-center mb-4 ">Software Quality Assurance</h1>
+      <h4 class="text-center mb-4 ">Quiz Sample Practice 2023/2024</h4>
+    </div>
+    <form id="quizForm">
+      <li>
+        <p class="alert alert-secondary">1. At the …………., quality management is concerned with establishing a framework
+          of organizational processes and standards that will lead to high-quality software.</p>
+        <ul>
+          <li><input type="radio" name="q1" value="A"> (A) project level</li>
+          <li><input type="radio" name="q1" value="B"> (B) organizational level</li>
+          <li><input type="radio" name="q1" value="C"> (C) A and B</li>
+        </ul>
+      </li>
 
       <li>
-        <p class="alert alert-secondary">20. A simple report shall take less than 20 s for 95% of the cases. None shall take above 80 s.</p>
+        <p class="alert alert-secondary">2. Some Quality requirements are …………… in the same sense as functional
+          requirements. If the system does not meet them, it is useless.</p>
+        <ul>
+          <li><input type="radio" name="q2" value="A"> (A) recommended</li>
+          <li><input type="radio" name="q2" value="B"> (B) mandatory</li>
+          <li><input type="radio" name="q2" value="C"> (C) composition</li>
+          <li><input type="radio" name="q2" value="D"> (D) optional</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">3. …………………provides an independent check on the software development process.
+        </p>
+        <ul>
+          <li><input type="radio" name="q3" value="A"> (A) Quality control</li>
+          <li><input type="radio" name="q3" value="B"> (B) Quality management</li>
+          <li><input type="radio" name="q3" value="C"> (C) Quality requirements</li>
+          <li><input type="radio" name="q3" value="D"> (D) Nothing</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">4. A ………………. sets out the desired product qualities and how these are assessed
+          and defines the most significant quality attributes.</p>
+        <ul>
+          <li><input type="radio" name="q4" value="A"> (A) Quality review</li>
+          <li><input type="radio" name="q4" value="B"> (B) Quality plan</li>
+          <li><input type="radio" name="q4" value="C"> (C) Quality requirements</li>
+          <li><input type="radio" name="q4" value="D"> (D) Nothing</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">5. The bottom-up design refers to:</p>
+        <ul>
+          <li><input type="radio" name="q5" value="A"> (A) Identifying the processes</li>
+          <li><input type="radio" name="q5" value="B"> (B) Analyzing the processes as systems</li>
+          <li><input type="radio" name="q5" value="C"> (C) Reviewing the requirements</li>
+          <li><input type="radio" name="q5" value="D"> (D) A and B</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">6. In the structure chart design, the …………structure charts are used when all
+          the transactions do not follow the same path.</p>
+        <ul>
+          <li><input type="radio" name="q6" value="A"> (A) Transform-centered</li>
+          <li><input type="radio" name="q6" value="B"> (B) Transaction-centered</li>
+          <li><input type="radio" name="q6" value="C"> (C) Nothing</li>
+          <li><input type="radio" name="q6" value="D"> (D) A and B</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">7. The ………………, allows the analyst to create CASE design entities from existing
+          computer source code.</p>
+        <ul>
+          <li><input type="radio" name="q7" value="A"> (A) Design reengineering</li>
+          <li><input type="radio" name="q7" value="B"> (B) Reverse engineering</li>
+          <li><input type="radio" name="q7" value="C"> (C) Object-oriented methods</li>
+          <li><input type="radio" name="q7" value="D"> (D) A and B</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">8. SQA group is independent of …………………...</p>
+        <ul>
+          <li><input type="radio" name="q8" value="A"> (A) The project manager</li>
+          <li><input type="radio" name="q8" value="B"> (B) The project’s software engineering group</li>
+          <li><input type="radio" name="q8" value="C"> (C) The other software-related groups</li>
+          <li><input type="radio" name="q8" value="D"> (D) All of the above</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">9. In the quality control, the process control is carried out …………..</p>
+        <ul>
+          <li><input type="radio" name="q9" value="A"> (A) Before production</li>
+          <li><input type="radio" name="q9" value="B"> (B) During production</li>
+          <li><input type="radio" name="q9" value="C"> (C) After production control</li>
+          <li><input type="radio" name="q9" value="D"> (D) All of the above</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">10. Select which option is not true about software quality assurance ………</p>
+        <ul>
+          <li><input type="radio" name="q10" value="A"> (A) Audits and reviews to be performed by the team</li>
+          <li><input type="radio" name="q10" value="B"> (B) Amount of technical work to be performed</li>
+          <li><input type="radio" name="q10" value="C"> (C) Evaluations to be performed</li>
+          <li><input type="radio" name="q10" value="D"> (D) Nothing</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">11. ………. are a primary objective of formal technical reviews to find during the
+          process so that after the release of the software they do not become the defect.</p>
+        <ul>
+          <li><input type="radio" name="q11" value="A"> (A) Failures</li>
+          <li><input type="radio" name="q11" value="B"> (B) Errors</li>
+          <li><input type="radio" name="q11" value="C"> (C) Faults</li>
+          <li><input type="radio" name="q11" value="D"> (D) All of the above</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">12. Select which one is not appraisal in Software Quality Assurance?</p>
+        <ul>
+          <li><input type="radio" name="q12" value="A"> (A) Maintenance</li>
+          <li><input type="radio" name="q12" value="B"> (B) Quality Planning</li>
+          <li><input type="radio" name="q12" value="C"> (C) Testing</li>
+          <li><input type="radio" name="q12" value="D"> (D) Inter-process inspection</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">13. …………… is an example of a classification of quality factors according to ISO
+          9126.</p>
+        <ul>
+          <li><input type="radio" name="q13" value="A"> (A) Sustainability</li>
+          <li><input type="radio" name="q13" value="B"> (B) Maintainability</li>
+          <li><input type="radio" name="q13" value="C"> (C) Accountability</li>
+          <li><input type="radio" name="q13" value="D"> (D) Profitability</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">14. The …………….. is an example of the content of SQA Plan according to IEEE Std
+          730</p>
+        <ul>
+          <li><input type="radio" name="q14" value="A"> (A) Faults control</li>
+          <li><input type="radio" name="q14" value="B"> (B) Reference document</li>
+          <li><input type="radio" name="q14" value="C"> (C) Scope Control</li>
+          <li><input type="radio" name="q14" value="D"> (D) A and B</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">15. A high-quality product satisfies clearly stated ………………………</p>
+        <ul>
+          <li><input type="radio" name="q15" value="A"> (A) Errors</li>
+          <li><input type="radio" name="q15" value="B"> (B) Requirements</li>
+          <li><input type="radio" name="q15" value="C"> (C) Project manager view</li>
+          <li><input type="radio" name="q15" value="D"> (D) Reviews</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">16. In the hotel system, the guest screen shall be able to show at least 200
+          rooms booked/occupied per day, e.g., for a company event with a single “customer”.</p>
+        <ul>
+          <li><input type="radio" name="q16" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q16" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q16" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q16" value="D"> (D) Performance requirements</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">17. In the hotel system, bookings shall be possible at least two years ahead.
+        </p>
+        <ul>
+          <li><input type="radio" name="q17" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q17" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q17" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q17" value="D"> (D) Performance requirements</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">18. Scrolling one page up or down in a 200-page document shall take at most 1
+          s. Searching for a specific keyword shall take at most 5 s.</p>
+        <ul>
+          <li><input type="radio" name="q18" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q18" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q18" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q18" value="D"> (D) Performance requirements</li>
+        </ul>
+
+      <li>
+        <p class="alert alert-secondary">19. Novice users shall perform each task in 15 minutes.</p>
+        <ul>
+          <li><input type="radio" name="q19" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q19" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q19" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q19" value="D"> (D) Performance requirements</li>
+        </ul>
+
+      <li>
+        <p class="alert alert-secondary">20. A simple report shall take less than 20 s for 95% of the cases. None shall
+          take above 80 s.</p>
         <ul>
           <li><input type="radio" name="q20" value="A"> (A) Capacity requirements</li>
           <li><input type="radio" name="q20" value="B"> (B) Usability requirements</li>
@@ -258,234 +280,387 @@
           <li><input type="radio" name="q20" value="D"> (D) Performance requirements</li>
         </ul>
 
-        <li>
-          <p class="alert alert-secondary">21. Recording breakfast shall be possible with 5 keystrokes per guest. No mouse.</p>
-          <ul>
-            <li><input type="radio" name="q21" value="A"> (A) Capacity requirements</li>
-            <li><input type="radio" name="q21" value="B"> (B) Usability requirements</li>
-            <li><input type="radio" name="q21" value="C"> (C) Accuracy requirements</li>
-            <li><input type="radio" name="q21" value="D"> (D) Performance requirements</li>
-          </ul>
-        <li>
-            <p class="alert alert-secondary">22. In standard workload, CPU usage shall be less than 50%, leaving 50% for background jobs.</p>
-            <ul>
-              <li><input type="radio" name="q22" value="A"> (A) Capacity requirements</li>
-              <li><input type="radio" name="q22" value="B"> (B) Usability requirements</li>
-              <li><input type="radio" name="q22" value="C"> (C) Accuracy requirements</li>
-              <li><input type="radio" name="q22" value="D"> (D) Performance requirements</li>
-            </ul>
-          <li>
-              <p class="alert alert-secondary">23. When moving to the next field, typing must be possible within 0.2 s.</p>
-              <ul>
-                <li><input type="radio" name="q23" value="A"> (A) Capacity requirements</li>
-                <li><input type="radio" name="q23" value="B"> (B) Usability requirements</li>
-                <li><input type="radio" name="q23" value="C"> (C) Accuracy requirements</li>
-                <li><input type="radio" name="q23" value="D"> (D) Performance requirements</li>
-              </ul>
-            <li>
-                <p class="alert alert-secondary">24. The name field shall have 150 chars.</p>
-                <ul>
-                  <li><input type="radio" name="q24" value="A"> (A) Capacity requirements</li>
-                  <li><input type="radio" name="q24" value="B"> (B) Usability requirements</li>
-                  <li><input type="radio" name="q24" value="C"> (C) Accuracy requirements</li>
-                  <li><input type="radio" name="q24" value="D"> (D) Performance requirements</li>
-                </ul>
+      <li>
+        <p class="alert alert-secondary">21. Recording breakfast shall be possible with 5 keystrokes per guest. No
+          mouse.</p>
+        <ul>
+          <li><input type="radio" name="q21" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q21" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q21" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q21" value="D"> (D) Performance requirements</li>
+        </ul>
+      <li>
+        <p class="alert alert-secondary">22. In standard workload, CPU usage shall be less than 50%, leaving 50% for
+          background jobs.</p>
+        <ul>
+          <li><input type="radio" name="q22" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q22" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q22" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q22" value="D"> (D) Performance requirements</li>
+        </ul>
+      <li>
+        <p class="alert alert-secondary">23. When moving to the next field, typing must be possible within 0.2 s.</p>
+        <ul>
+          <li><input type="radio" name="q23" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q23" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q23" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q23" value="D"> (D) Performance requirements</li>
+        </ul>
+      <li>
+        <p class="alert alert-secondary">24. The name field shall have 150 chars.</p>
+        <ul>
+          <li><input type="radio" name="q24" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q24" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q24" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q24" value="D"> (D) Performance requirements</li>
+        </ul>
 
-              <li>
-                  <p class="alert alert-secondary">25. A number of records in the database shall be less than 10,000 per year.</p>
-                  <ul>
-                    <li><input type="radio" name="q25" value="A"> (A) Capacity requirements</li>
-                    <li><input type="radio" name="q25" value="B"> (B) Usability requirements</li>
-                    <li><input type="radio" name="q25" value="C"> (C) Accuracy requirements</li>
-                    <li><input type="radio" name="q25" value="D"> (D) Performance requirements</li>
-                  </ul>
+      <li>
+        <p class="alert alert-secondary">25. A number of records in the database shall be less than 10,000 per year.</p>
+        <ul>
+          <li><input type="radio" name="q25" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q25" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q25" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q25" value="D"> (D) Performance requirements</li>
+        </ul>
 
-  <div style="text-align: center;">
-<button class="btn btn-primary" type="button" onclick="submitQuiz()" style="margin: 10px;">Submit Answers</button>
-</div>
+      <li>
+        <p class="alert alert-secondary">26. The Content of SQA Plan according to IEEE Std 730 may include ……………………….
+        </p>
+        <ul>
+          <li><input type="radio" name="q26" value="A"> (A) All the above</li>
+          <li><input type="radio" name="q26" value="B"> (B) Code control</li>
+          <li><input type="radio" name="q26" value="C"> (C) Scope Control</li>
+          <li><input type="radio" name="q26" value="D"> (D) Reference document and Scope control</li>
+          <li><input type="radio" name="q26" value="E"> (E) Reference document</li>
+        </ul>
 
-  <div id="resultArea" class="labl-primery"> </div>
-  <div id="responseArea" class="labl-primery"> </div>
+      <li>
+        <p class="alert alert-secondary">27. The bottom-up design includes ........</p>
+        <ul>
+          <li><input type="radio" name="q27" value="A"> (A) All of these</li>
+          <li><input type="radio" name="q27" value="B"> (B) Identifying the processes</li>
+          <li><input type="radio" name="q27" value="C"> (C) Analyzing the processes as systems</li>
+        </ul>
+
+      <li>
+        <p class="alert alert-secondary">28. According to IEEE, the standard can be an object or measure of comparison
+          that defines or represents the magnitude of a unit.</p>
+        <ul>
+          <li><input type="radio" name="q28" value="T"> (T) True</li>
+          <li><input type="radio" name="q28" value="F"> (F) False </li>
+        </ul>
+
+      <li>
+        <p class="alert alert-secondary">29. Software quality plan contain quality goals to be achieved, expected risks
+          and risk management.</p>
+        <ul>
+          <li><input type="radio" name="q29" value="T"> (T) True</li>
+          <li><input type="radio" name="q29" value="F"> (F) False </li>
+        </ul>
+
+      <li>
+        <p class="alert alert-secondary">30. Software quality control activity includes mentoring how to conduct
+          standard processes, such as quality reviews.</p>
+        <ul>
+          <li><input type="radio" name="q30" value="T"> (T) True</li>
+          <li><input type="radio" name="q30" value="F"> (F) False </li>
+        </ul>
+
+      <li>
+        <p class="alert alert-secondary">31. Quality management provides an independent check on the software
+          development process.</p>
+        <ul>
+          <li><input type="radio" name="q31" value="T"> (T) True</li>
+          <li><input type="radio" name="q31" value="F"> (F) False </li>
+        </ul>
+
+      <li>
+        <p class="alert alert-secondary">32. Software quality plan activity includes verifying and evaluating to improve
+          the use of methods, procedures, and adopted software tools.</p>
+        <ul>
+          <li><input type="radio" name="q32" value="T"> (T) True</li>
+          <li><input type="radio" name="q32" value="F"> (F) False </li>
+        </ul>
+
+      <li>
+        <p class="alert alert-secondary">33. The software specification should reflect the characteristics of the
+          product that the auditor wants.</p>
+        <ul>
+          <li><input type="radio" name="q33" value="A"> (T) True</li>
+          <li><input type="radio" name="q33" value="B"> (F) False </li>
+        </ul>
+      <li>
+        <p class="alert alert-secondary">34. A high quality products Satisfies clearly stated ……………………….</p>
+        <ul>
+          <li><input type="radio" name="q26" value="A"> (A) reviews</li>
+          <li><input type="radio" name="q26" value="B"> (B) project manager view</li>
+          <li><input type="radio" name="q26" value="C"> (C) errors</li>
+          <li><input type="radio" name="q26" value="D"> (D) requirements</li>
+        </ul>
+
+      <li>
+        <p class="alert alert-secondary">35. System engineering standard is particular application domain develop
+          sophisticated interactions between system and software engineering.</p>
+        <ul>
+          <li><input type="radio" name="q35" value="T"> (T) True</li>
+          <li><input type="radio" name="q35" value="F"> (F) False </li>
+        </ul>
+
+      <li>
+        <p class="alert alert-secondary">36. The reviewing is an independent examination process which provides an
+          independent evaluation of conformance of software products and processes to applicable regulations.</p>
+        <ul>
+          <li><input type="radio" name="q36" value="T"> (T) True</li>
+          <li><input type="radio" name="q36" value="F"> (F) False </li>
+        </ul>
+
+      <li>
+        <p class="alert alert-secondary">37. A process allows the same quality to be replicated from product to product
+          often by the use of standards.</p>
+        <ul>
+          <li><input type="radio" name="q37" value="T"> (T) True</li>
+          <li><input type="radio" name="q37" value="F"> (F) False </li>
+        </ul>
+
+      <li>
+        <p class="alert alert-secondary">38. The software quality control concerns with how general principles of good
+          management are applied to specific areas of software engineering.</p>
+        <ul>
+          <li><input type="radio" name="q38" value="T"> (T) True</li>
+          <li><input type="radio" name="q38" value="F"> (F) False </li>
+        </ul>
+
+      <li>
+        <p class="alert alert-secondary">39. Quality reviews involve a group of people examining a software process,
+          system, or its associated documentation to discover potential problems.</p>
+        <ul>
+          <li><input type="radio" name="q39" value="T"> (T) True</li>
+          <li><input type="radio" name="q39" value="F"> (F) False </li>
+        </ul>
+      <li>
+        <p class="alert alert-secondary">40. Software quality assurance consists of the auditing and reporting functions
+          of management.</p>
+        <ul>
+          <li><input type="radio" name="q40" value="T"> (T) True</li>
+          <li><input type="radio" name="q40" value="F"> (F) False </li>
+        </ul>
+
+        <div style="text-align: center;">
+          <button class="btn btn-primary" type="button" onclick="submitQuiz()" style="margin: 10px;">Submit
+            Answers</button>
+        </div>
+
+        <div id="resultArea" class="labl-primery"> </div>
+        <div id="responseArea" class="labl-primery"> </div>
 
 
-</form>
+    </form>
 
-</div>
+  </div>
 
-    
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
-<script>
-  var userSelections = {};
-  var totalQuestions = 0;
-  var totalCorrectAnswers = 0;
-  var totalIncorrectAnswers = 0;
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
-  function submitQuiz() {
-    // Your JavaScript logic to check and display results goes here
-    // For demonstration purposes, let's assume the correct answers are A for all questions
+  <script>
+    var userSelections = {};
+    var totalQuestions = 0;
+    var totalCorrectAnswers = 0;
+    var totalIncorrectAnswers = 0;
 
-   // Check and color the selected answers
-    // checkAnswer(1, 'B');
-    // checkAnswer(2, 'B');
-    // checkAnswer(3, 'B');
-    // checkAnswer(4, 'B');
-    // checkAnswer(5, 'D');
-    // checkAnswer(6, 'B');
-    // checkAnswer(7, 'D');
-    // checkAnswer(8, 'D');
-    // checkAnswer(9, 'B');
-    // checkAnswer(10, 'B');
-    // checkAnswer(11, 'B');
-    // checkAnswer(12, 'B');
-    // checkAnswer(13, 'B');
-    // checkAnswer(14, 'B');
-    // checkAnswer(15, 'B');
-    // checkAnswer(16, 'A');
-    // checkAnswer(17, 'C');
-    // checkAnswer(18, 'D');
-    // checkAnswer(19, 'B');
-    // checkAnswer(20, 'D');
-    // checkAnswer(21, 'B');
-    // checkAnswer(22, 'D');
-    // checkAnswer(23, 'D');
-    // checkAnswer(24, 'C');
-    // checkAnswer(25, 'A');
-    // Add more checkAnswer calls for other questions
+    function submitQuiz() {
 
-    var correctAnswers = {
-   q1:'B',
-   q2:'B',
-   q3:'B',
-   q4: 'B',
-   q5: 'D',
-   q6:'B',
-   q7: 'D',
-   q8: 'D',
-   q9: 'B',
-   q10: 'B',
-   q11: 'B',
-   q12: 'B',
-   q13: 'B',
-   q14: 'B',
-   q15: 'B',
-   q16: 'A',
-   q17: 'C',
-   q18: 'D',
-   q19: 'B',
-   q20: 'D',
-   q21: 'B',
-   q22: 'D',
-   q23: 'D',
-   q24: 'C',
-   q25: 'A'
-    // Add more correct answers for other questions
-  };
 
-  // Check and color the selected answers
-    checkAnswer(1, correctAnswers.q1);
-    checkAnswer(2, correctAnswers.q2);
-    checkAnswer(3, correctAnswers.q3);
-    checkAnswer(4, correctAnswers.q4);
-    checkAnswer(5, correctAnswers.q5);
-    checkAnswer(6, correctAnswers.q6);
-    checkAnswer(7, correctAnswers.q7);
-    checkAnswer(8, correctAnswers.q8);
-    checkAnswer(9, correctAnswers.q9);
-    checkAnswer(10, correctAnswers.q10);
-    checkAnswer(11, correctAnswers.q10);
-    checkAnswer(12, correctAnswers.q12);
-    checkAnswer(13, correctAnswers.q13);
-    checkAnswer(14, correctAnswers.q14);
-    checkAnswer(15, correctAnswers.q15);
-    checkAnswer(16, correctAnswers.q16);
-    checkAnswer(17, correctAnswers.q17);
-    checkAnswer(18, correctAnswers.q18);
-    checkAnswer(19, correctAnswers.q19);
-    checkAnswer(20, correctAnswers.q20);
-    checkAnswer(21, correctAnswers.q21);
-    checkAnswer(22, correctAnswers.q22);
-    checkAnswer(23, correctAnswers.q23);
-    checkAnswer(24, correctAnswers.q24);
-    checkAnswer(25, correctAnswers.q25);
+      // Your JavaScript logic to check and display results goes here
 
-    // Update total counts
-    totalQuestions = Object.keys(userSelections).length;
-    // totalCorrectAnswers = Object.values(userSelections).filter(answer => answer === 'A').length;
-    totalCorrectAnswers = Object.keys(correctAnswers).filter(question => userSelections[question] === correctAnswers[question]).length;
+      var correctAnswers = {
+        q1: 'B',
+        q2: 'B',
+        q3: 'B',
+        q4: 'B',
+        q5: 'D',
+        q6: 'B',
+        q7: 'D',
+        q8: 'D',
+        q9: 'B',
+        q10: 'B',
+        q11: 'B',
+        q12: 'B',
+        q13: 'B',
+        q14: 'B',
+        q15: 'B',
+        q16: 'A',
+        q17: 'C',
+        q18: 'D',
+        q19: 'B',
+        q20: 'D',
+        q21: 'B',
+        q22: 'D',
+        q23: 'D',
+        q24: 'C',
+        q25: 'A',
 
-    totalIncorrectAnswers = totalQuestions - totalCorrectAnswers;
+        q26: 'A',
+        q27: 'A',
+        q28: 'T',
+        q29: 'T',
+        q30: 'T',
+        q31: 'T',
+        q32: 'F',
+        q33: 'F',
+        q34: 'D',
+        q35: 'T',
+        q36: 'F',
+        q37: 'T',
+        q38: 'F',
+        q39: 'T',
+        q40: 'T'
+        // Add more correct answers for other questions
+      };
 
-   // list of correct Answers 
-   var allCorrectAnswers = Object.values(correctAnswers).flat();
+      // Check and color the selected answers
+      checkAnswer(1, correctAnswers.q1);
+      checkAnswer(2, correctAnswers.q2);
+      checkAnswer(3, correctAnswers.q3);
+      checkAnswer(4, correctAnswers.q4);
+      checkAnswer(5, correctAnswers.q5);
+      checkAnswer(6, correctAnswers.q6);
+      checkAnswer(7, correctAnswers.q7);
+      checkAnswer(8, correctAnswers.q8);
+      checkAnswer(9, correctAnswers.q9);
+      checkAnswer(10, correctAnswers.q10);
+      checkAnswer(11, correctAnswers.q10);
+      checkAnswer(12, correctAnswers.q12);
+      checkAnswer(13, correctAnswers.q13);
+      checkAnswer(14, correctAnswers.q14);
+      checkAnswer(15, correctAnswers.q15);
+      checkAnswer(16, correctAnswers.q16);
+      checkAnswer(17, correctAnswers.q17);
+      checkAnswer(18, correctAnswers.q18);
+      checkAnswer(19, correctAnswers.q19);
+      checkAnswer(20, correctAnswers.q20);
+      checkAnswer(21, correctAnswers.q21);
+      checkAnswer(22, correctAnswers.q22);
+      checkAnswer(23, correctAnswers.q23);
+      checkAnswer(24, correctAnswers.q24);
+      checkAnswer(25, correctAnswers.q25);
 
-  console.log(allCorrectAnswers);
+      checkAnswer(25, correctAnswers.q25);
+      checkAnswer(26, correctAnswers.q26);
+      checkAnswer(27, correctAnswers.q27);
+      checkAnswer(28, correctAnswers.q28);
+      checkAnswer(29, correctAnswers.q29);
+      checkAnswer(30, correctAnswers.q30);
+      checkAnswer(31, correctAnswers.q31);
+      checkAnswer(32, correctAnswers.q32);
+      checkAnswer(33, correctAnswers.q33);
+      checkAnswer(34, correctAnswers.q34);
+      checkAnswer(35, correctAnswers.q35);
+      checkAnswer(36, correctAnswers.q36);
+      checkAnswer(37, correctAnswers.q37);
+      checkAnswer(38, correctAnswers.q38);
+      checkAnswer(39, correctAnswers.q39);
+      checkAnswer(40, correctAnswers.q40);
 
-    // Display summary response
-    displayResponse();
-  }
+      // Update total counts
+      totalQuestions = Object.keys(userSelections).length;
+      // totalCorrectAnswers = Object.values(userSelections).filter(answer => answer === 'A').length;
+      totalCorrectAnswers = Object.keys(correctAnswers).filter(question => userSelections[question] === correctAnswers[question]).length;
 
-  function checkAllCorrectAnswers(questionNumber, correctAnswers) {
-  // Get all checkboxes for the question
-  var checkboxes = document.querySelectorAll('input[name="q' + questionNumber + '"]');
+      totalIncorrectAnswers = totalQuestions - totalCorrectAnswers;
 
-  // Uncheck all checkboxes first
-  checkboxes.forEach(checkbox => {
-    checkbox.checked = false;
-  });
+      // list of correct Answers 
+      var allCorrectAnswers = Object.values(correctAnswers).flat();
 
-  // Select only the correct answers
-  correctAnswers.forEach(correctAnswer => {
-    var checkbox = document.querySelector('input[name="q' + questionNumber + '"][value="' + correctAnswer + '"]');
-    if (checkbox) {
-      checkbox.checked = true;
+      console.log(allCorrectAnswers);
+
+      // Display summary response
+      displayResponse();
+
+      // Clear Answer color
+     // selectedAnswer.parentNode.classList.add('answer')
     }
-  });
 
-  // Store all correct answers
-  userSelections['q' + questionNumber] = correctAnswers;
-}
+    function checkAllCorrectAnswers(questionNumber, correctAnswers) {
+      // Get all checkboxes for the question
+      var checkboxes = document.querySelectorAll('input[name="q' + questionNumber + '"]');
 
-  function checkAnswer(questionNumber, correctAnswer) {
-    // Get user's selected answer
-    var selectedAnswer = document.querySelector('input[name="q' + questionNumber + '"]:checked');
+      // Uncheck all checkboxes first
+      checkboxes.forEach(checkbox => {
+        checkbox.checked = false;
+      });
 
-    // Store user's selection
-    userSelections['q' + questionNumber] = selectedAnswer ? selectedAnswer.value : null;
+      // Select only the correct answers
+      correctAnswers.forEach(correctAnswer => {
+        var checkbox = document.querySelector('input[name="q' + questionNumber + '"][value="' + correctAnswer + '"]');
+        if (checkbox) {
+          checkbox.checked = true;
+        }
+      });
 
-    // Display correct/incorrect color
-    if (selectedAnswer) {
-      if (selectedAnswer.value === correctAnswer) {
-        selectedAnswer.parentNode.classList.add('correct-answer'); // Correct answer
-      } else {
-        selectedAnswer.parentNode.classList.add('incorrect-answer'); // Incorrect answer
+      // Store all correct answers
+      userSelections['q' + questionNumber] = correctAnswers;
+    }
+
+    function checkAnswer(questionNumber, correctAnswer) {
+      // Get user's selected answer
+      var selectedAnswer = document.querySelector('input[name="q' + questionNumber + '"]:checked');
+
+      // Store user's selection
+      userSelections['q' + questionNumber] = selectedAnswer ? selectedAnswer.value : null;
+
+      // Display correct/incorrect color
+
+      
+
+    // Add the 'answer' class
+    selectedAnswer.parentNode.classList.add('answer');
+
+      if (selectedAnswer) {
+
+       // selectedAnswer.parentNode.classList.add('answer')
+        //selectedAnswer.parentNode.classList.remove('correct-answer', 'incorrect-answer');
+
+
+        if (selectedAnswer.value === correctAnswer) {
+          
+          selectedAnswer.parentNode.classList.add('correct-answer'); // Correct answer
+
+        } else {
+          selectedAnswer.parentNode.classList.add('incorrect-answer'); // Incorrect answer
+         
+        }
+
       }
+      
+      if (selectedAnswer) {
+    // Remove existing classes
+    selectedAnswer.parentNode.classList.remove('correct-answer', 'incorrect-answer');
+        
     }
-  }
+ 
+    function displayResponse() {
+      var responseArea = document.getElementById('responseArea');
+      var resultArea = document.getElementById('resultArea');
 
-  function displayResponse() {
-    var responseArea = document.getElementById('responseArea');
-    var resultArea = document.getElementById('resultArea');
-    
+      responseArea.innerHTML = '<h2 class="mb-3">Quiz Summary</h2>';
+      responseArea.innerHTML += '<p class="alert alert-secondary">Total Correct Answers: ' + totalCorrectAnswers + '</p>';
+      responseArea.innerHTML += '<p class="alert alert-secondary">Total Incorrect Answers: ' + totalIncorrectAnswers + '</p>';
+      responseArea.innerHTML += '<p class="alert alert-secondary">Total Questions: ' + totalQuestions + '</p>';
+      resultArea.innerHTML = '<h2 > Result : ' + (totalCorrectAnswers / totalQuestions * 100) + ' % </h2>';
 
-    responseArea.innerHTML = '<h2 class="mb-3">Quiz Summary</h2>';
-    responseArea.innerHTML += '<p class="alert alert-secondary">Total Correct Answers: ' + totalCorrectAnswers + '</p>';
-    responseArea.innerHTML += '<p class="alert alert-secondary">Total Incorrect Answers: ' + totalIncorrectAnswers + '</p>';
-    responseArea.innerHTML += '<p class="alert alert-secondary">Total Questions: ' + totalQuestions + '</p>';
-    resultArea.innerHTML = '<h2 > Result : ' + (totalCorrectAnswers/totalQuestions *100) + ' % </h2>';
-
-    for (var question in userSelections) {
-      var selectedAnswer = userSelections[question];
-      var responseText = selectedAnswer
-        ? '<p class="alert alert-secondary">Question ' + question.slice(1) + ': Your answer was ' + selectedAnswer + '.</p>'
-        : '<p class="alert alert-secondary">Question ' + question.slice(1) + ': You did not answer this question.</p>';
+      for (var question in userSelections) {
+        var selectedAnswer = userSelections[question];
+        var responseText = selectedAnswer
+          ? '<p class="alert alert-secondary">Question ' + question.slice(1) + ': Your answer was ' + selectedAnswer + '.</p>'
+          : '<p class="alert alert-secondary">Question ' + question.slice(1) + ': You did not answer this question.</p>';
 
         responseArea.innerHTML += responseText;
+      }
     }
-  }
-</script>
+  </script>
 
 </body>
-</html>
 
+</html>
