@@ -8,7 +8,7 @@
     /* Add your CSS styles here */
     body {
       font-family: Arial, sans-serif;
-
+      color: #335a81;
     }
 
     ol {
@@ -60,8 +60,8 @@
     }
 
     .alert-primary {
-    --bs-alert-color: #ffffff;
-    --bs-alert-bg: #00b7f3;
+    --bs-alert-color: #00b7f3;
+    --bs-alert-bg: #f1fff6 ;
     /* --bs-alert-border-color: #dee2e6; */
     --bs-alert-link-color: var(--bs-primary-text-emphasis);
 }
@@ -81,6 +81,10 @@
     --bs-btn-disabled-bg: #00b7f3;
     --bs-btn-disabled-border-color: #dee2e6;
 }
+.alert-secondary{
+  background-color: #f1f8ff;
+  color: #335a81;
+}
     img {
   max-width: 100%;
   height: auto;
@@ -97,6 +101,8 @@
       <!-- <h1 class="text-center mb-4 ">Software Quality Assurance</h1>-->
       <h2 class="text-center mb-4 ">Software Quality Assurance Quiz - Sample Questions for 2023/2024</h2>
     </div>
+    <div id="google_translate_element">
+
     <form id="quizForm">
       <li>
         <p class="alert alert-secondary">1. At the …………., quality management is concerned with establishing a framework
@@ -483,7 +489,7 @@
 
 
     </form>
-
+  </div>
   </div>
 
 
@@ -681,6 +687,12 @@
       }
     }
   </script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'ar'}, 'google_translate_element');
+      }
+    </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
