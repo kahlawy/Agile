@@ -1,0 +1,777 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://kahlawy.github.io/SQA/ -->
+<html lang="en" style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./kahlawy.github.io_files/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      color: #335a81;
+    }
+
+    ol {
+      list-style-type: none;
+    }
+
+    li {
+      margin-bottom: 15px;
+      font-size: large;
+      list-style-type: none;
+    }
+
+    p {
+      font-weight: bold;
+    }
+
+    .correct-answer {
+      color: green;
+    }
+
+    .incorrect-answer {
+      color: red;
+    }
+
+    .answer {
+      color: black;
+    }
+
+    #responseArea {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f8f9fa;
+    }
+
+    #resultArea {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f8f9fa;
+      color: #335a81;
+    }
+
+    input {
+      font-size: large;
+      color: royalblue;
+    }
+
+    .alert-primary {
+    --bs-alert-color: #00b7f3;
+    --bs-alert-bg: #f1fff6 ;
+    /* --bs-alert-border-color: #dee2e6; */
+    --bs-alert-link-color: var(--bs-primary-text-emphasis);
+}
+    .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #335a81;
+    --bs-btn-border-color: #adb5bd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg:  #00b7f3 ;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #dee2e6;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #00b7f3;
+    --bs-btn-disabled-border-color: #dee2e6;
+}
+.alert-secondary{
+  background-color: #f1f8ff;
+  color: #335a81;
+}
+    img {
+  max-width: 100%;
+  height: auto;
+}
+#timer {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 50px;
+      padding-bottom: 10px;
+    }
+  </style>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./kahlawy.github.io_files/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="./kahlawy.github.io_files/m=el_main"></script><style>
+      @font-face {
+        font-family: Source Sans Pro;
+        font-weight: normal;
+        src: url(chrome-extension://jpcandanmpaeclcpfhadgflmlbhdehjg/assets/fonts/SourceSansPro-Regular.ttf) format("truetype")
+      }
+    
+      @font-face {
+        font-family: Source Sans Pro;
+        font-weight: 700;
+        src: url(chrome-extension://jpcandanmpaeclcpfhadgflmlbhdehjg/assets/fonts/SourceSansPro-SemiBold.ttf) format("truetype")
+      }
+    
+      @font-face {
+        font-family: Nunito;
+        font-weight: normal;
+        src: url(chrome-extension://jpcandanmpaeclcpfhadgflmlbhdehjg/assets/fonts/Nunito-Regular.ttf) format("truetype")
+      }
+    
+      @font-face {
+        font-family: Nunito;
+        font-weight: 700;
+        src: url(chrome-extension://jpcandanmpaeclcpfhadgflmlbhdehjg/assets/fonts/Nunito-SemiBold.ttf) format("truetype")
+      }
+    </style></head>
+
+<body style="position: relative; min-height: 100%; top: 0px;" class="aqua-ext-enabled" data-new-gr-c-s-check-loaded="14.1149.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+
+  <div class="container mt-5">
+        <img src="./kahlawy.github.io_files/63f902d79a33f745616ce0b3_shutterstock_1409330834-1024x656.png" alt="Software Quality Assurance">
+
+    <div class="alert alert-primary" role="alert">
+      <!-- <h1 class="text-center mb-4 ">Software Quality Assurance</h1>-->
+      <h2 class="text-center mb-4 ">Software Quality Assurance Quiz - Sample Questions for 2023/2024</h2>
+    </div>
+    <span style="font-size:x-large;"> <strong>  Time : </strong></span>
+    <span id="timer">0:00</span>
+   <br>
+
+    <div id="google_translate_element">
+    <form id="quizForm">
+      <li>
+        <p class="alert alert-secondary">1. At the …………., quality management is concerned with establishing a framework
+          of organizational processes and standards that will lead to high-quality software.</p>
+        <ul>
+          <li><input type="radio" name="q1" value="A"> (A) project level</li>
+          <li class="correct-answer"><input type="radio" name="q1" value="B"> (B) organizational level</li>
+          <li><input type="radio" name="q1" value="C"> (C) A and B</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">2. Some Quality requirements are …………… in the same sense as functional
+          requirements. If the system does not meet them, it is useless.</p>
+        <ul>
+          <li><input type="radio" name="q2" value="A"> (A) recommended</li>
+          <li class="correct-answer"><input type="radio" name="q2" value="B"> (B) mandatory</li>
+          <li><input type="radio" name="q2" value="C"> (C) composition</li>
+          <li><input type="radio" name="q2" value="D"> (D) optional</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">3. …………………provides an independent check on the software development process.
+        </p>
+        <ul>
+          <li><input type="radio" name="q3" value="A"> (A) Quality control</li>
+          <li class="correct-answer"><input type="radio" name="q3" value="B"> (B) Quality management</li>
+          <li><input type="radio" name="q3" value="C"> (C) Quality requirements</li>
+          <li><input type="radio" name="q3" value="D"> (D) Nothing</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">4. A ………………. sets out the desired product qualities and how these are assessed
+          and defines the most significant quality attributes.</p>
+        <ul>
+          <li><input type="radio" name="q4" value="A"> (A) Quality review</li>
+          <li class="correct-answer"><input type="radio" name="q4" value="B"> (B) Quality plan</li>
+          <li><input type="radio" name="q4" value="C"> (C) Quality requirements</li>
+          <li><input type="radio" name="q4" value="D"> (D) Nothing</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">5. The bottom-up design refers to:</p>
+        <ul>
+          <li><input type="radio" name="q5" value="A"> (A) Identifying the processes</li>
+          <li><input type="radio" name="q5" value="B"> (B) Analyzing the processes as systems</li>
+          <li><input type="radio" name="q5" value="C"> (C) Reviewing the requirements</li>
+          <li class="correct-answer"><input type="radio" name="q5" value="D"> (D) A and B</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">6. In the structure chart design, the …………structure charts are used when all
+          the transactions do not follow the same path.</p>
+        <ul>
+          <li><input type="radio" name="q6" value="A"> (A) Transform-centered</li>
+          <li class="correct-answer"><input type="radio" name="q6" value="B"> (B) Transaction-centered</li>
+          <li><input type="radio" name="q6" value="C"> (C) Nothing</li>
+          <li><input type="radio" name="q6" value="D"> (D) A and B</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">7. The ………………, allows the analyst to create CASE design entities from existing
+          computer source code.</p>
+        <ul>
+          <li><input type="radio" name="q7" value="A"> (A) Design reengineering</li>
+          <li><input type="radio" name="q7" value="B"> (B) Reverse engineering</li>
+          <li><input type="radio" name="q7" value="C"> (C) Object-oriented methods</li>
+          <li class="correct-answer"><input type="radio" name="q7" value="D"> (D) A and B</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">8. SQA group is independent of …………………...</p>
+        <ul>
+          <li><input type="radio" name="q8" value="A"> (A) The project manager</li>
+          <li><input type="radio" name="q8" value="B"> (B) The project’s software engineering group</li>
+          <li><input type="radio" name="q8" value="C"> (C) The other software-related groups</li>
+          <li class="correct-answer"><input type="radio" name="q8" value="D"> (D) All of the above</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">9. In the quality control, the process control is carried out …………..</p>
+        <ul>
+          <li><input type="radio" name="q9" value="A"> (A) Before production</li>
+          <li class="correct-answer"><input type="radio" name="q9" value="B"> (B) During production</li>
+          <li><input type="radio" name="q9" value="C"> (C) After production control</li>
+          <li><input type="radio" name="q9" value="D"> (D) All of the above</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">10. Select which option is not true about software quality assurance ………</p>
+        <ul>
+          <li><input type="radio" name="q10" value="A"> (A) Audits and reviews to be performed by the team</li>
+          <li class="correct-answer"><input type="radio" name="q10" value="B"> (B) Amount of technical work to be performed</li>
+          <li><input type="radio" name="q10" value="C"> (C) Evaluations to be performed</li>
+          <li><input type="radio" name="q10" value="D"> (D) Nothing</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">11. ………. are a primary objective of formal technical reviews to find during the
+          process so that after the release of the software they do not become the defect.</p>
+        <ul>
+          <li><input type="radio" name="q11" value="A"> (A) Failures</li>
+          <li class="correct-answer"><input type="radio" name="q11" value="B"> (B) Errors</li>
+          <li><input type="radio" name="q11" value="C"> (C) Faults</li>
+          <li><input type="radio" name="q11" value="D"> (D) All of the above</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">12. Select which one is not appraisal in Software Quality Assurance?</p>
+        <ul>
+          <li><input type="radio" name="q12" value="A"> (A) Maintenance</li>
+          <li class="correct-answer"><input type="radio" name="q12" value="B"> (B) Quality Planning</li>
+          <li><input type="radio" name="q12" value="C"> (C) Testing</li>
+          <li><input type="radio" name="q12" value="D"> (D) Inter-process inspection</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">13. …………… is an example of a classification of quality factors according to ISO
+          9126.</p>
+        <ul>
+          <li><input type="radio" name="q13" value="A"> (A) Sustainability</li>
+          <li class="correct-answer"><input type="radio" name="q13" value="B"> (B) Maintainability</li>
+          <li><input type="radio" name="q13" value="C"> (C) Accountability</li>
+          <li><input type="radio" name="q13" value="D"> (D) Profitability</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">14. The …………….. is an example of the content of SQA Plan according to IEEE Std
+          730</p>
+        <ul>
+          <li><input type="radio" name="q14" value="A"> (A) Faults control</li>
+          <li class="correct-answer"><input type="radio" name="q14" value="B"> (B) Reference document</li>
+          <li><input type="radio" name="q14" value="C"> (C) Scope Control</li>
+          <li><input type="radio" name="q14" value="D"> (D) A and B</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">15. A high-quality product satisfies clearly stated ………………………</p>
+        <ul>
+          <li><input type="radio" name="q15" value="A"> (A) Errors</li>
+          <li class="correct-answer"><input type="radio" name="q15" value="B"> (B) Requirements</li>
+          <li><input type="radio" name="q15" value="C"> (C) Project manager view</li>
+          <li><input type="radio" name="q15" value="D"> (D) Reviews</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">16. In the hotel system, the guest screen shall be able to show at least 200
+          rooms booked/occupied per day, e.g., for a company event with a single “customer”.</p>
+        <ul>
+          <li class="correct-answer"><input type="radio" name="q16" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q16" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q16" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q16" value="D"> (D) Performance requirements</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">17. In the hotel system, bookings shall be possible at least two years ahead.
+        </p>
+        <ul>
+          <li><input type="radio" name="q17" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q17" value="B"> (B) Usability requirements</li>
+          <li class="correct-answer"><input type="radio" name="q17" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q17" value="D"> (D) Performance requirements</li>
+        </ul>
+      </li>
+
+      <li>
+        <p class="alert alert-secondary">18. Scrolling one page up or down in a 200-page document shall take at most 1
+          s. Searching for a specific keyword shall take at most 5 s.</p>
+        <ul>
+          <li><input type="radio" name="q18" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q18" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q18" value="C"> (C) Accuracy requirements</li>
+          <li class="correct-answer"><input type="radio" name="q18" value="D"> (D) Performance requirements</li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">19. Novice users shall perform each task in 15 minutes.</p>
+        <ul>
+          <li><input type="radio" name="q19" value="A"> (A) Capacity requirements</li>
+          <li class="correct-answer"><input type="radio" name="q19" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q19" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q19" value="D"> (D) Performance requirements</li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">20. A simple report shall take less than 20 s for 95% of the cases. None shall
+          take above 80 s.</p>
+        <ul>
+          <li><input type="radio" name="q20" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q20" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q20" value="C"> (C) Accuracy requirements</li>
+          <li class="correct-answer"><input type="radio" name="q20" value="D"> (D) Performance requirements</li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">21. Recording breakfast shall be possible with 5 keystrokes per guest. No
+          mouse.</p>
+        <ul>
+          <li><input type="radio" name="q21" value="A"> (A) Capacity requirements</li>
+          <li class="correct-answer"><input type="radio" name="q21" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q21" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q21" value="D"> (D) Performance requirements</li>
+        </ul>
+      </li><li>
+        <p class="alert alert-secondary">22. In standard workload, CPU usage shall be less than 50%, leaving 50% for
+          background jobs.</p>
+        <ul>
+          <li><input type="radio" name="q22" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q22" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q22" value="C"> (C) Accuracy requirements</li>
+          <li class="correct-answer"><input type="radio" name="q22" value="D"> (D) Performance requirements</li>
+        </ul>
+      </li><li>
+        <p class="alert alert-secondary">23. When moving to the next field, typing must be possible within 0.2 s.</p>
+        <ul>
+          <li><input type="radio" name="q23" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q23" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q23" value="C"> (C) Accuracy requirements</li>
+          <li class="correct-answer"><input type="radio" name="q23" value="D"> (D) Performance requirements</li>
+        </ul>
+      </li><li>
+        <p class="alert alert-secondary">24. The name field shall have 150 chars.</p>
+        <ul>
+          <li><input type="radio" name="q24" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q24" value="B"> (B) Usability requirements</li>
+          <li class="correct-answer"><input type="radio" name="q24" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q24" value="D"> (D) Performance requirements</li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">25. A number of records in the database shall be less than 10,000 per year.</p>
+        <ul>
+          <li class="correct-answer"><input type="radio" name="q25" value="A"> (A) Capacity requirements</li>
+          <li><input type="radio" name="q25" value="B"> (B) Usability requirements</li>
+          <li><input type="radio" name="q25" value="C"> (C) Accuracy requirements</li>
+          <li><input type="radio" name="q25" value="D"> (D) Performance requirements</li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">26. The Content of SQA Plan according to IEEE Std 730 may include ……………………….
+        </p>
+        <ul>
+          <li class="correct-answer"><input type="radio" name="q26" value="A"> (A) All the above</li>
+          <li><input type="radio" name="q26" value="B"> (B) Code control</li>
+          <li><input type="radio" name="q26" value="C"> (C) Scope Control</li>
+          <li><input type="radio" name="q26" value="D"> (D) Reference document and Scope control</li>
+          <li><input type="radio" name="q26" value="E"> (E) Reference document</li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">27. The bottom-up design includes ........</p>
+        <ul>
+          <li class="correct-answer"><input type="radio" name="q27" value="A"> (A) All of these</li>
+          <li><input type="radio" name="q27" value="B"> (B) Identifying the processes</li>
+          <li><input type="radio" name="q27" value="C"> (C) Analyzing the processes as systems</li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">28. According to IEEE, the standard can be an object or measure of comparison
+          that defines or represents the magnitude of a unit.</p>
+        <ul>
+          <li class="correct-answer"><input type="radio" name="q28" value="T"> (T) True</li>
+          <li><input type="radio" name="q28" value="F"> (F) False </li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">29. Software quality plan contains quality goals to be achieved, expected risks
+          and risk management.</p>
+        <ul>
+          <li class="correct-answer"><input type="radio" name="q29" value="T"> (T) True</li>
+          <li><input type="radio" name="q29" value="F"> (F) False </li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">30. Software quality control activity includes mentoring how to conduct
+          standard processes, such as quality reviews.</p>
+        <ul>
+          <li class="correct-answer"><input type="radio" name="q30" value="T"> (T) True</li>
+          <li><input type="radio" name="q30" value="F"> (F) False </li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">31. Quality management provides an independent check on the software
+          development process.</p>
+        <ul>
+          <li class="correct-answer"><input type="radio" name="q31" value="T"> (T) True</li>
+          <li><input type="radio" name="q31" value="F"> (F) False </li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">32. Software quality plan activity includes verifying and evaluating to improve
+          the use of methods, procedures, and adopted software tools.</p>
+        <ul>
+          <li><input type="radio" name="q32" value="T"> (T) True</li>
+          <li class="correct-answer"><input type="radio" name="q32" value="F"> (F) False </li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">33. The software specification should reflect the characteristics of the
+          product that the auditor wants.</p>
+        <ul>
+          <li><input type="radio" name="q33" value="T"> (T) True</li>
+          <li class="correct-answer"><input type="radio" name="q33" value="F"> (F) False </li>
+        </ul>
+      </li><li>
+        <p class="alert alert-secondary">34. A high quality products Satisfies clearly stated ……………………….</p>
+        <ul>
+          <li><input type="radio" name="q34" value="A"> (A) reviews</li>
+          <li><input type="radio" name="q34" value="B"> (B) project manager view</li>
+          <li><input type="radio" name="q34" value="C"> (C) errors</li>
+          <li class="correct-answer"><input type="radio" name="q34" value="D"> (D) requirements</li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">35. System engineering standard is particular application domain develop
+          sophisticated interactions between system and software engineering.</p>
+        <ul>
+          <li class="correct-answer"><input type="radio" name="q35" value="T"> (T) True</li>
+          <li><input type="radio" name="q35" value="F"> (F) False </li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">36. The reviewing is an independent examination process which provides an
+          independent evaluation of conformance of software products and processes to applicable regulations.</p>
+        <ul>
+          <li><input type="radio" name="q36" value="T"> (T) True</li>
+          <li class="correct-answer"><input type="radio" name="q36" value="F"> (F) False </li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">37. A process allows the same quality to be replicated from product to product
+          often by the use of standards.</p>
+        <ul>
+          <li class="correct-answer"><input type="radio" name="q37" value="T"> (T) True</li>
+          <li><input type="radio" name="q37" value="F"> (F) False </li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">38. The software quality control concerns with how general principles of good
+          management are applied to specific areas of software engineering.</p>
+        <ul>
+          <li><input type="radio" name="q38" value="T"> (T) True</li>
+          <li class="correct-answer"><input type="radio" name="q38" value="F"> (F) False </li>
+        </ul>
+
+      </li><li>
+        <p class="alert alert-secondary">39. Quality reviews involve a group of people examining a software process,
+          system, or its associated documentation to discover potential problems.</p>
+        <ul>
+          <li class="correct-answer"><input type="radio" name="q39" value="T"> (T) True</li>
+          <li><input type="radio" name="q39" value="F"> (F) False </li>
+        </ul>
+      </li><li>
+        <p class="alert alert-secondary">40. Software quality assurance consists of the auditing and reporting functions
+          of management.</p>
+        <ul>
+          <li class="correct-answer"><input type="radio" name="q40" value="T"> (T) True</li>
+          <li><input type="radio" name="q40" value="F"> (F) False </li>
+        </ul>
+
+        <div style="text-align: center;">
+          <button class="btn btn-primary" type="button" onclick="submitQuiz()" style="margin: 10px;">Submit
+            Answers</button>
+        </div>
+
+        <div id="resultArea" class="labl-primery"><h2> Result : 100 % </h2></div>
+        <div id="responseArea" class="labl-primery"><h2 class="mb-3">Quiz Summary</h2><p class="alert alert-secondary">Total Correct Answers: 40</p><p class="alert alert-secondary">Total Incorrect Answers: 0</p><p class="alert alert-secondary">Total Questions: 40</p><p class="alert alert-secondary">Question 1: Your answer was B.</p><p class="alert alert-secondary">Question 2: Your answer was B.</p><p class="alert alert-secondary">Question 3: Your answer was B.</p><p class="alert alert-secondary">Question 4: Your answer was B.</p><p class="alert alert-secondary">Question 5: Your answer was D.</p><p class="alert alert-secondary">Question 6: Your answer was B.</p><p class="alert alert-secondary">Question 7: Your answer was D.</p><p class="alert alert-secondary">Question 8: Your answer was D.</p><p class="alert alert-secondary">Question 9: Your answer was B.</p><p class="alert alert-secondary">Question 10: Your answer was B.</p><p class="alert alert-secondary">Question 11: Your answer was B.</p><p class="alert alert-secondary">Question 12: Your answer was B.</p><p class="alert alert-secondary">Question 13: Your answer was B.</p><p class="alert alert-secondary">Question 14: Your answer was B.</p><p class="alert alert-secondary">Question 15: Your answer was B.</p><p class="alert alert-secondary">Question 16: Your answer was A.</p><p class="alert alert-secondary">Question 17: Your answer was C.</p><p class="alert alert-secondary">Question 18: Your answer was D.</p><p class="alert alert-secondary">Question 19: Your answer was B.</p><p class="alert alert-secondary">Question 20: Your answer was D.</p><p class="alert alert-secondary">Question 21: Your answer was B.</p><p class="alert alert-secondary">Question 22: Your answer was D.</p><p class="alert alert-secondary">Question 23: Your answer was D.</p><p class="alert alert-secondary">Question 24: Your answer was C.</p><p class="alert alert-secondary">Question 25: Your answer was A.</p><p class="alert alert-secondary">Question 26: Your answer was A.</p><p class="alert alert-secondary">Question 27: Your answer was A.</p><p class="alert alert-secondary">Question 28: Your answer was T.</p><p class="alert alert-secondary">Question 29: Your answer was T.</p><p class="alert alert-secondary">Question 30: Your answer was T.</p><p class="alert alert-secondary">Question 31: Your answer was T.</p><p class="alert alert-secondary">Question 32: Your answer was F.</p><p class="alert alert-secondary">Question 33: Your answer was F.</p><p class="alert alert-secondary">Question 34: Your answer was D.</p><p class="alert alert-secondary">Question 35: Your answer was T.</p><p class="alert alert-secondary">Question 36: Your answer was F.</p><p class="alert alert-secondary">Question 37: Your answer was T.</p><p class="alert alert-secondary">Question 38: Your answer was F.</p><p class="alert alert-secondary">Question 39: Your answer was T.</p><p class="alert alert-secondary">Question 40: Your answer was T.</p></div>
+
+
+    </li></form>
+  <div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage"><select class="goog-te-combo" aria-label="Language Translate Widget"><option value="">Select Language</option><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="am">Amharic</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="as">Assamese</option><option value="ay">Aymara</option><option value="az">Azerbaijani</option><option value="bm">Bambara</option><option value="eu">Basque</option><option value="be">Belarusian</option><option value="bn">Bengali</option><option value="bho">Bhojpuri</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="ny">Chichewa</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="co">Corsican</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="dv">Dhivehi</option><option value="doi">Dogri</option><option value="nl">Dutch</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="ee">Ewe</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="fy">Frisian</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gn">Guarani</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="ha">Hausa</option><option value="haw">Hawaiian</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="ilo">Ilocano</option><option value="id">Indonesian</option><option value="ga">Irish</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kn">Kannada</option><option value="kk">Kazakh</option><option value="km">Khmer</option><option value="rw">Kinyarwanda</option><option value="gom">Konkani</option><option value="ko">Korean</option><option value="kri">Krio</option><option value="ku">Kurdish (Kurmanji)</option><option value="ckb">Kurdish (Sorani)</option><option value="ky">Kyrgyz</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="ln">Lingala</option><option value="lt">Lithuanian</option><option value="lg">Luganda</option><option value="lb">Luxembourgish</option><option value="mk">Macedonian</option><option value="mai">Maithili</option><option value="mg">Malagasy</option><option value="ms">Malay</option><option value="ml">Malayalam</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mni-Mtei">Meiteilon (Manipuri)</option><option value="lus">Mizo</option><option value="mn">Mongolian</option><option value="my">Myanmar (Burmese)</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="or">Odia (Oriya)</option><option value="om">Oromo</option><option value="ps">Pashto</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="pa">Punjabi</option><option value="qu">Quechua</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sm">Samoan</option><option value="sa">Sanskrit</option><option value="gd">Scots Gaelic</option><option value="nso">Sepedi</option><option value="sr">Serbian</option><option value="st">Sesotho</option><option value="sn">Shona</option><option value="sd">Sindhi</option><option value="si">Sinhala</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option value="es">Spanish</option><option value="su">Sundanese</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="tg">Tajik</option><option value="ta">Tamil</option><option value="tt">Tatar</option><option value="te">Telugu</option><option value="th">Thai</option><option value="ti">Tigrinya</option><option value="ts">Tsonga</option><option value="tr">Turkish</option><option value="tk">Turkmen</option><option value="ak">Twi</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="ug">Uyghur</option><option value="uz">Uzbek</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="xh">Xhosa</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></div>Powered by <span style="white-space:nowrap"><a class="VIpgJd-ZVi9od-l4eHX-hSRGPd" href="https://translate.google.com/" target="_blank"><img src="./kahlawy.github.io_files/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google Translate">Translate</a></span></div></div>
+  </div>
+
+
+  <script src="./kahlawy.github.io_files/popper.min.js.download"></script>
+  <script src="./kahlawy.github.io_files/bootstrap.min.js.download"></script>
+
+  <script>
+    // Set the initial time to 60 minutes
+  let time = 60 * 60; // seconds
+
+function updateTimer() {
+  const minutes = Math.floor(time / 60);
+  const seconds = time % 60;
+
+  // Display the time in the "timer" div
+  document.getElementById('timer').innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+  // Decrement time
+  time--;
+
+  // Check if the timer has reached zero
+  if (time < 0) {
+    clearInterval(timerInterval);
+    alert('Time is up!');
+  }
+}
+
+// Call the updateTimer function every second
+const timerInterval = setInterval(updateTimer, 1000);
+    var userSelections = {};
+    var totalQuestions = 0;
+    var totalCorrectAnswers = 0;
+    var totalIncorrectAnswers = 0;
+
+    function submitQuiz() {
+
+ time = 0;
+      // Your JavaScript logic to check and display results goes here
+
+      var correctAnswers = {
+        q1: 'B',
+        q2: 'B',
+        q3: 'B',
+        q4: 'B',
+        q5: 'D',
+        q6: 'B',
+        q7: 'D',
+        q8: 'D',
+        q9: 'B',
+        q10: 'B',
+        q11: 'B',
+        q12: 'B',
+        q13: 'B',
+        q14: 'B',
+        q15: 'B',
+        q16: 'A',
+        q17: 'C',
+        q18: 'D',
+        q19: 'B',
+        q20: 'D',
+        q21: 'B',
+        q22: 'D',
+        q23: 'D',
+        q24: 'C',
+        q25: 'A',
+
+        q26: 'A',
+        q27: 'A',
+        q28: 'T',
+        q29: 'T',
+        q30: 'T',
+        q31: 'T',
+        q32: 'F',
+        q33: 'F',
+        q34: 'D',
+        q35: 'T',
+        q36: 'F',
+        q37: 'T',
+        q38: 'F',
+        q39: 'T',
+        q40: 'T'
+        // Add more correct answers for other questions
+      };
+
+      // Check and color the selected answers
+      checkAnswer(1, correctAnswers.q1);
+      checkAnswer(2, correctAnswers.q2);
+      checkAnswer(3, correctAnswers.q3);
+      checkAnswer(4, correctAnswers.q4);
+      checkAnswer(5, correctAnswers.q5);
+      checkAnswer(6, correctAnswers.q6);
+      checkAnswer(7, correctAnswers.q7);
+      checkAnswer(8, correctAnswers.q8);
+      checkAnswer(9, correctAnswers.q9);
+      checkAnswer(10, correctAnswers.q10);
+      checkAnswer(11, correctAnswers.q11);
+      checkAnswer(12, correctAnswers.q12);
+      checkAnswer(13, correctAnswers.q13);
+      checkAnswer(14, correctAnswers.q14);
+      checkAnswer(15, correctAnswers.q15);
+      checkAnswer(16, correctAnswers.q16);
+      checkAnswer(17, correctAnswers.q17);
+      checkAnswer(18, correctAnswers.q18);
+      checkAnswer(19, correctAnswers.q19);
+      checkAnswer(20, correctAnswers.q20);
+      checkAnswer(21, correctAnswers.q21);
+      checkAnswer(22, correctAnswers.q22);
+      checkAnswer(23, correctAnswers.q23);
+      checkAnswer(24, correctAnswers.q24);
+      checkAnswer(25, correctAnswers.q25);
+
+      checkAnswer(25, correctAnswers.q25);
+      checkAnswer(26, correctAnswers.q26);
+      checkAnswer(27, correctAnswers.q27);
+      checkAnswer(28, correctAnswers.q28);
+      checkAnswer(29, correctAnswers.q29);
+      checkAnswer(30, correctAnswers.q30);
+      checkAnswer(31, correctAnswers.q31);
+      checkAnswer(32, correctAnswers.q32);
+      checkAnswer(33, correctAnswers.q33);
+      checkAnswer(34, correctAnswers.q34);
+      checkAnswer(35, correctAnswers.q35);
+      checkAnswer(36, correctAnswers.q36);
+      checkAnswer(37, correctAnswers.q37);
+      checkAnswer(38, correctAnswers.q38);
+      checkAnswer(39, correctAnswers.q39);
+      checkAnswer(40, correctAnswers.q40);
+
+      // Update total counts
+      totalQuestions = Object.keys(userSelections).length;
+      // totalCorrectAnswers = Object.values(userSelections).filter(answer => answer === 'A').length;
+      totalCorrectAnswers = Object.keys(correctAnswers).filter(question => userSelections[question] === correctAnswers[question]).length;
+
+      totalIncorrectAnswers = totalQuestions - totalCorrectAnswers;
+
+      // list of correct Answers 
+      var allCorrectAnswers = Object.values(correctAnswers).flat();
+
+      console.log(allCorrectAnswers);
+
+      // Display summary response
+      displayResponse();
+
+      // Clear Answer color
+     // selectedAnswer.parentNode.classList.add('answer')
+    }
+
+    function checkAllCorrectAnswers(questionNumber, correctAnswers) {
+      // Get all checkboxes for the question
+      var checkboxes = document.querySelectorAll('input[name="q' + questionNumber + '"]');
+
+      // Uncheck all checkboxes first
+      checkboxes.forEach(checkbox => {
+        checkbox.checked = false;
+      });
+
+      // Select only the correct answers
+      correctAnswers.forEach(correctAnswer => {
+        var checkbox = document.querySelector('input[name="q' + questionNumber + '"][value="' + correctAnswer + '"]');
+        if (checkbox) {
+          checkbox.checked = true;
+        }
+      });
+
+      // Store all correct answers
+      userSelections['q' + questionNumber] = correctAnswers;
+    }
+
+    function checkAnswer(questionNumber, correctAnswer) {
+      // Get user's selected answer
+      var selectedAnswer = document.querySelector('input[name="q' + questionNumber + '"]:checked');
+
+      // Store user's selection
+      userSelections['q' + questionNumber] = selectedAnswer ? selectedAnswer.value : null;
+
+      // Display correct/incorrect color
+
+      
+
+      if (selectedAnswer) {
+
+       // selectedAnswer.parentNode.classList.add('answer')
+        //selectedAnswer.parentNode.classList.remove('correct-answer', 'incorrect-answer');
+
+
+        if (selectedAnswer.value === correctAnswer) {
+          
+          selectedAnswer.parentNode.classList.add('correct-answer'); // Correct answer
+
+        } else {
+          selectedAnswer.parentNode.classList.add('incorrect-answer'); // Incorrect answer
+         
+        }
+
+      }
+      
+        
+    }
+ 
+    function displayResponse() {
+      var responseArea = document.getElementById('responseArea');
+      var resultArea = document.getElementById('resultArea');
+
+      responseArea.innerHTML = '<h2 class="mb-3">Quiz Summary</h2>';
+      responseArea.innerHTML += '<p class="alert alert-secondary">Total Correct Answers: ' + totalCorrectAnswers + '</p>';
+      responseArea.innerHTML += '<p class="alert alert-secondary">Total Incorrect Answers: ' + totalIncorrectAnswers + '</p>';
+      responseArea.innerHTML += '<p class="alert alert-secondary">Total Questions: ' + totalQuestions + '</p>';
+      resultArea.innerHTML = '<h2 > Result : ' + (totalCorrectAnswers / totalQuestions * 100) + ' % </h2>';
+
+      for (var question in userSelections) {
+        var selectedAnswer = userSelections[question];
+        var responseText = selectedAnswer
+          ? '<p class="alert alert-secondary">Question ' + question.slice(1) + ': Your answer was ' + selectedAnswer + '.</p>'
+          : '<p class="alert alert-secondary">Question ' + question.slice(1) + ': You did not answer this question.</p>';
+
+        responseArea.innerHTML += responseText;
+      }
+    }
+  </script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+    </script>
+  <script type="text/javascript" src="./kahlawy.github.io_files/element.js.download"></script><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: &#39;Google Sans&#39;, Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="./kahlawy.github.io_files/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">Original text</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Rate this translation</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Your feedback will be used to help improve Google Translate</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Good translation" aria-label="Good translation" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Poor translation" aria-label="Poor translation" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="https://translate.googleapis.com/translate_voting?client=te" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0" src="./kahlawy.github.io_files/saved_resource.html"></iframe></div></div></div>
+
+
+
+
+<div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><div id="aqua-ext-app-container"><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://jpcandanmpaeclcpfhadgflmlbhdehjg/dist/contentScripts/style.css"><div id="aqua-ext-app-container" data-v-app=""><div id="ext-root"><div class="z-10000 dragable text-grey-darker-3" style="touch-action: none; left: 5px; top: 5px;"><!----></div><!----><!----><!----><!----></div></div></template></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
